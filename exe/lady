@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+# 导入编译好的 gem
+# 所以，当修改过lib文件下的代码，都需要重新执行
+# gem build *.gemspec 和 gem install *.gem 命令
+require 'Lady'
+Lady::Command.run(ARGV)

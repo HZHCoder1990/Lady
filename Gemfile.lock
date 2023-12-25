@@ -1,0 +1,38 @@
+PATH
+  remote: .
+  specs:
+    Lady (0.1.0)
+      claide (~> 1.1.0)
+      colored2 (~> 3.1.2)
+      rest-client (~> 2.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    claide (1.1.0)
+    colored2 (3.1.2)
+    domain_name (0.6.20231109)
+    http-accept (1.7.0)
+    http-cookie (1.0.5)
+      domain_name (~> 0.5)
+    mime-types (3.5.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2023.1205)
+    netrc (0.11.0)
+    rake (13.1.0)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+
+PLATFORMS
+  ruby
+  x86_64-darwin-21
+
+DEPENDENCIES
+  Lady!
+  rake (~> 13.0)
+
+BUNDLED WITH
+   2.3.7
