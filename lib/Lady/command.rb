@@ -2,6 +2,7 @@ require 'claide'
 require 'colored2'
 require 'rest-client'
 require 'json'
+require 'fileutils'
 
 module Lady
 

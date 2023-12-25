@@ -5,3 +5,4 @@
 # gem build *.gemspec 和 gem install *.gem 命令
 require 'Lady'
 Lady::Command.run(ARGV)
+# Lady::Command.run(['download', '5.89 c@N.JI WMJ:/ 06/12 复制打开抖音，看看【朦胧521的作品】  https://v.douyin.com/i8XmEK8n/'])

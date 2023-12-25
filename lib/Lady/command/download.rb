@@ -28,14 +28,17 @@ module Lady
         # 2.解析下载链接
         response = RestClient.get(ANALYSE_PREFIX + urls[0] , HEADERS)
         json_obj =  JSON.parse(response)
+        nickname = json_obj['nickname'] ||= 'temp'
+        #puts json_obj
         video_url =  json_obj['video']
         if video_url.length > 0
           # 3.下载
           video_data = RestClient.get(video_url)
-          puts "下载完成".green
+          mkdir = FileUtils.mkdir_p('/Users/mac/Desktop/video')[0]
           # 4.写入本地
-          file = File.open('/Users/mac/Desktop/video.mp4', 'a+')
+          file = File.open("#{mkdir}/#{nickname}.mp4", 'a+')
           if file
+            puts "保存成功!".green
             file.syswrite(video_data)
           end
         end
@@ -51,12 +54,12 @@ module Lady
       urls
     end
 
-    # def validate!
-    #   super
-    #   unless @link
-    #     help! "link is necessary!"
-    #   end
-    # end
+    def validate!
+      super
+      unless @link
+        help! "link is necessary!"
+      end
+    end
 
   end
 
