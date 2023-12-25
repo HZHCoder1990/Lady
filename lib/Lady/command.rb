@@ -1,6 +1,7 @@
 require 'claide'
 require 'colored2'
 require 'rest-client'
+require 'json'
 
 module Lady
 
