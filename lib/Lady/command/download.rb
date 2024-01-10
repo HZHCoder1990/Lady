@@ -34,7 +34,7 @@ module Lady
         if video_url.length > 0
           # 3.下载
           video_data = RestClient.get(video_url)
-          mkdir = FileUtils.mkdir_p('/Users/mac/Desktop/video')[0]
+          mkdir = FileUtils.mkdir_p('~/Desktop/video')[0]
           # 4.写入本地
           file = File.open("#{mkdir}/#{nickname}.mp4", 'a+')
           if file

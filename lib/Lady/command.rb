@@ -15,7 +15,7 @@ module Lady
     # 和可执行程序同名
     self.command = 'lady'
     self.version = VERSION
-    self.description = "通过抖音分享链接下载小姐姐视频"
+    self.description = "通过抖音分享链接下载小姐姐视频(支持Web和App)"
 
     def self.options
       []
